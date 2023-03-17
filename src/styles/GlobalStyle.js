@@ -30,8 +30,8 @@ html {
 body{
   width:100%;
   height: 100%;
-  /* display:flex;
-  justify-content:center; */
+  //display:flex;
+ // justify-content:center;
   background-color:#f9f9f9;
   color: #333;
   margin: 0;
@@ -83,3 +83,4 @@ a{
   
 
 `;
+//input 폰트 적용
