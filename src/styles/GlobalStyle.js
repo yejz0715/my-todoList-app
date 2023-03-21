@@ -11,31 +11,38 @@ html {
   --color-background: #ECECEC;
   font-size: 62.5%; 
 }
+//
 
-
+//header
 @font-face {
-    font-family: 'GangwonEdu_OTFLightA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: 700;
+     font-style: normal;
 }
 @font-face {
-    font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
 }
-
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+}
 
 body{
-  width:100%;
-  height: 100%;
-  //display:flex;
- // justify-content:center;
+  width:100vw;
+  height: 100vh;
+  /* display:flex;
+  justify-content:center;
+  align-items: center; */
   background-color:#f9f9f9;
   color: #333;
   margin: 0;
-  font-family: "GangwonEdu_OTFLightA", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'S-CoreDream-3Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
@@ -62,13 +69,6 @@ a{
     background-color: transparent;
   }
   
-  input{
-    outline: none;
-    border:none;
-    background-color: transparent;
-  }
-
-
   button {
      outline: none;
     border: none;
