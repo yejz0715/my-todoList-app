@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./style";
-import img from "../../assets/headerToot.png";
+import img from "../../assets/header-toot.png";
 const Header = () => {
   return (
     <S.Container>
