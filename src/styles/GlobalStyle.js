@@ -5,10 +5,16 @@ export const GlobalStyle = createGlobalStyle`
 ${reset}
 
 html {
-  --color-text: #333333;
-  --color-text-secondary: #999999;
-  --color-primary: #99C9A6;
+  --color-main:#5089C6;
+  --color-serve-one:#719FCF;
+  --color-serve-two:#92B4D9;
+  --color-serve-three:#B3CAE2;
+  --color-serve-four:#D4DFEC;
   --color-background: #ffffff;
+  --color-text: #333333;
+  --color-text-serve: #666666;
+  --color-text-hint: #999999;
+  --color-text-warning:#C65050
 
   font-size: 62.5%; 
 }
@@ -47,15 +53,15 @@ html {
 
 
 body{
+  display: flex;
   width:100vw;
   height: 100vh;
   background-color:var(--color-background);
   margin: 0;
-  font-family:'S-CoreDream-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'SCoreDream-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
-  font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-text);
@@ -69,6 +75,7 @@ a{
       box-sizing: border-box;
   }
   input, textarea { 
+    font-family:'SCoreDream-Regular';
     -moz-user-select: auto;
     -webkit-user-select: auto;
     -ms-user-select: auto;
