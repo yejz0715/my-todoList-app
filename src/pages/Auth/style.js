@@ -1,28 +1,37 @@
 import styled from "styled-components";
 
-export const Wrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 18rem;
-`;
-
 export const Container = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: calc(100vh - 3.8125rem);
+
+  @media screen and (max-width: 768px) {
+    padding: 0rem 1.25rem;
+  }
+`;
+
+export const AuthWrap = styled.div`
+  display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.5rem;
   width: 100%;
-  height: 52rem;
+  max-width: 27.25rem;
+  height: 35.5625rem;
 `;
 
 //radioType
 export const RadioTab = styled.div`
   display: flex;
-  gap: 3rem;
-  width: 44rem;
+  gap: 2.25rem;
+  width: 100%;
+  max-width: 27.25rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
 `;
 
 export const InpRadio = styled.input`
@@ -30,56 +39,101 @@ export const InpRadio = styled.input`
 `;
 
 export const InpRadioLabel = styled.label`
-  padding: 0 1rem 1rem 0;
-  line-height: 2rem;
-  font-size: 2rem;
-  font-weight: 500;
-  color: ${(props) => (props.checked ? "#333" : "#999999")};
-  border-bottom: ${(props) => (props.checked ? "4px solid #5089c6" : null)};
+  font-family: "SCoreDream-Medium";
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: ${(props) =>
+    props.checked ? "var(--color-text)" : "var(--color-text-hint)"};
+  border-bottom: ${(props) =>
+    props.checked ? "4px solid var(--color-main)" : null};
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
 `;
 
-//input
-export const InputContainer = styled.div`
+export const AuthForm = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.75rem;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 768px) {
+    gap: 1.75rem;
+  }
 `;
 
 export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.75rem;
+  width: 100%;
 `;
 
 export const InputLabel = styled.label`
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-family: "SCoreDream-Medium";
+  font-size: 1rem;
+  line-height: 1.1875rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+  }
 `;
 
 export const InputBox = styled.input`
-  width: 44rem;
-  height: 5.4rem;
+  width: 100%;
+  max-width: 27.25rem;
+  height: 3.375rem;
+  padding: 1rem;
   background-color: rgba(217, 217, 217, 0.15);
-  font-size: 1.6rem;
-  border-radius: 5rem;
-  color: #999999;
-  padding: 2rem;
+  font-family: "SCoreDream-Light";
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  border-radius: 3rem;
+
+  @media screen and (max-width: 768px) {
+    height: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+  }
+`;
+
+export const Msg = styled.label`
+  font-family: "SCoreDream-Light";
+  color: var(--color-text-warning); //기본 | 경고-#c65050;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
 `;
 
 export const SubmitButton = styled.input`
-  width: 44rem;
-  height: 5.4rem;
-  margin-top: 4rem;
-  background-color: #5089c6;
-  border-radius: 5rem;
-  font-size: 2rem;
-  font-weight: 500;
+  width: 100%;
+  max-width: 27.25rem;
+  height: 3.375rem;
+  background-color: var(--color-main);
+  border-radius: 3rem;
+  font-family: "SCoreDream-Medium";
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.14em;
   color: #ffffff;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
 `;
 
 export const Img = styled.img`
-  width: 39rem;
-  height: 43rem;
+  width: 24.3794rem;
+  height: 27.0475rem;
+  margin-bottom: 5.125rem;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
