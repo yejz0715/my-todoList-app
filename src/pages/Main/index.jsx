@@ -12,7 +12,7 @@ const Todo = () => {
     <S.TodoContainer>
       <S.TodoWarp>
         <S.CalendarWarp>
-          {/* <S.EyeIcon src={eyeIcon} alt="eyeIcon"/> */}
+          <S.EyeIcon src={eyeIcon} alt="eyeIcon" />
           <TodoCalendar />
           <S.Icons></S.Icons>
         </S.CalendarWarp>
@@ -28,7 +28,7 @@ const Todo = () => {
 
           <TodoList />
         </TodoTemplate>
-        {/* <S.MouthIcon src={mouthIcon} alt="mouthIcon"/> */}
+        <S.MouthIcon src={mouthIcon} alt="mouthIcon" />
       </S.TodoWarp>
     </S.TodoContainer>
   );

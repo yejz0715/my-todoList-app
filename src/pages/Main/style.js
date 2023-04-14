@@ -2,22 +2,27 @@ import styled from "styled-components";
 import { BsPlus } from "react-icons/bs";
 
 export const TodoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: calc(100vh - 3.8125rem);
-  background-color: transparent;
+  background-color: #f4f4f4f4;
 `;
 
 export const EyeIcon = styled.img`
   width: 74.37px;
   height: 28.73px;
   position: absolute;
-  top: 58px;
+  top: 72px;
+  left: 240px;
 `;
 export const MouthIcon = styled.img`
   width: 81.49px;
   height: 40.89px;
   position: absolute;
-  top: 999px;
+  bottom: 0;
+  right: 233px;
 `;
 
 export const TodoWarp = styled.div`
@@ -26,9 +31,9 @@ export const TodoWarp = styled.div`
   max-width: 77.6875rem;
   height: 100%;
   max-height: 48.5rem;
-  margin: 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3.125rem;
+  background-color: var(--color-background);
 `;
 export const CalendarWarp = styled.div`
   display: flex;
@@ -38,8 +43,6 @@ export const CalendarWarp = styled.div`
   width: 100%;
   height: 100%;
 `;
-
-export const Calendar = styled.div``;
 
 export const Icons = styled.div``;
 
