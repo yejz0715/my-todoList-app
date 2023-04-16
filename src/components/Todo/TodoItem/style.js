@@ -43,3 +43,26 @@ export const ModifyButton = styled.img`
   height: 1.5rem;
   cursor: pointer;
 `;
+export const ModifyBox = styled.div`
+  position: absolute;
+  width: 100%;
+  max-width: 3.0625rem;
+  height: 100%;
+  max-height: 3.75rem;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+  border-radius: 0%.25rem;
+`;
+export const UpdateButton = styled.div`
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-family: "SCoreDream-Light";
+  color: var(--color-text-serve);
+  cursor: pointer;
+`;
+export const DeleteButton = styled.div`
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-family: "SCoreDream-Light";
+  color: var(--color-text-serve);
+  cursor: pointer;
+`;

@@ -36,6 +36,10 @@ const TodoItem = () => {
           alt="modifyBtn"
           onClick={ShowModifyOption}
         />
+        <S.ModifyBox>
+          <S.UpdateButton>수정</S.UpdateButton>
+          <S.DeleteButton>삭제</S.DeleteButton>
+        </S.ModifyBox>
       </S.Container>
     </>
   );
