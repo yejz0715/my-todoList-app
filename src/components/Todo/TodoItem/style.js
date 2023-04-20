@@ -38,19 +38,29 @@ export const Detail = styled.label`
   line-height: 1.1875rem;
 `;
 
+export const ModifyWarp = styled.div`
+  display: flex;
+`;
+
 export const ModifyButton = styled.img`
   width: 1.6087rem;
   height: 1.5rem;
   cursor: pointer;
 `;
 export const ModifyBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
   position: absolute;
   width: 100%;
   max-width: 3.0625rem;
   height: 100%;
   max-height: 3.75rem;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
-  border-radius: 0%.25rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
 `;
 export const UpdateButton = styled.div`
   font-size: 0.875rem;
