@@ -38,7 +38,7 @@ export const TodoWarp = styled.div`
 export const CalendarWarp = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: 100%;

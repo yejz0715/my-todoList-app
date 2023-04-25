@@ -1,36 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./style";
 import eyeIcon from "../../assets/todo-icon-eye.png";
 import mouthIcon from "../../assets/todo-icon-mouth.png";
 import TodoTemplate from "../../components/Todo/TodoTemplate";
 import TodoList from "../../components/Todo/TodoList";
 import TodoCalendar from "../../components/Todo/TodoCalendar";
+import TodoInput from "../../components/Todo/TodoInput";
 const Todo = () => {
-  const showTodoInputModal = () => {};
+  const [InputModalOpen, setInputModalOpen] = useState(false);
+
+  const showTodoInputModal = () => {
+    setInputModalOpen(true);
+  };
 
   return (
-    <S.TodoContainer>
-      <S.TodoWarp>
-        <S.CalendarWarp>
-          <S.EyeIcon src={eyeIcon} alt="eyeIcon" />
-          <TodoCalendar />
-          <S.Icons></S.Icons>
-        </S.CalendarWarp>
+    <>
+      {InputModalOpen && <TodoInput setInputModalOpen={setInputModalOpen} />}
 
-        <TodoTemplate>
-          <S.TodoHeaderWarp>
-            <S.TodoHeaderBox>
-              <S.Date>2023.00.00</S.Date>
-              <S.Category>일상 취미 공부 기타</S.Category>
-            </S.TodoHeaderBox>
-            <S.InsertButton onClick={showTodoInputModal} />
-          </S.TodoHeaderWarp>
+      <S.TodoContainer>
+        <S.TodoWarp>
+          <S.CalendarWarp>
+            <S.EyeIcon src={eyeIcon} alt="eyeIcon" />
 
-          <TodoList />
-        </TodoTemplate>
-        <S.MouthIcon src={mouthIcon} alt="mouthIcon" />
-      </S.TodoWarp>
-    </S.TodoContainer>
+            <TodoCalendar />
+            <S.Icons></S.Icons>
+          </S.CalendarWarp>
+
+          <TodoTemplate>
+            <S.TodoHeaderWarp>
+              <S.TodoHeaderBox>
+                <S.Date>2023.00.00</S.Date>
+                <S.Category>일상 취미 공부 기타</S.Category>
+              </S.TodoHeaderBox>
+              <S.InsertButton onClick={showTodoInputModal} />
+            </S.TodoHeaderWarp>
+
+            <TodoList />
+          </TodoTemplate>
+          <S.MouthIcon src={mouthIcon} alt="mouthIcon" />
+        </S.TodoWarp>
+      </S.TodoContainer>
+    </>
   );
 };
 
