@@ -10,35 +10,37 @@ export const TodoContainer = styled.div`
   background-color: #f4f4f4f4;
 `;
 
-export const EyeIcon = styled.img`
-  width: 74.37px;
-  height: 28.73px;
-  position: absolute;
-  top: 72px;
-  left: 240px;
-`;
-export const MouthIcon = styled.img`
-  width: 81.49px;
-  height: 40.89px;
-  position: absolute;
-  bottom: 0;
-  right: 233px;
-`;
-
 export const TodoWarp = styled.div`
+  position: relative;
   display: flex;
   width: 100%;
   max-width: 77.6875rem;
   height: 100%;
-  max-height: 48.5rem;
+  max-height: 740px;
+  /* max-height: 48.5rem; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3.125rem;
   background-color: var(--color-background);
 `;
+
+export const EyeIcon = styled.img`
+  position: absolute;
+  top: -2.7956rem;
+  left: 0rem;
+  width: 4.6481rem;
+  height: 1.7956rem;
+`;
+export const MouthIcon = styled.img`
+  position: absolute;
+  bottom: -3.56rem;
+  right: 0rem;
+  width: 5.0931rem;
+  height: 2.5556rem;
+`;
+
 export const CalendarWarp = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: 100%;
@@ -76,7 +78,7 @@ export const InsertButton = styled(BsPlus)`
   max-width: 3rem;
   height: 100%;
   max-height: 3rem;
-  color: white;
+  color: #fff;
   background-color: var(--color-serve-one);
   border-radius: 1.25rem;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);

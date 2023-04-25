@@ -5,7 +5,7 @@ import mouthIcon from "../../assets/todo-icon-mouth.png";
 import TodoTemplate from "../../components/Todo/TodoTemplate";
 import TodoList from "../../components/Todo/TodoList";
 import TodoCalendar from "../../components/Todo/TodoCalendar";
-import TodoInput from "../../components/Todo/TodoInput";
+import TodoInputModal from "../../components/Todo/TodoInputModal";
 const Todo = () => {
   const [InputModalOpen, setInputModalOpen] = useState(false);
 
@@ -15,13 +15,14 @@ const Todo = () => {
 
   return (
     <>
-      {InputModalOpen && <TodoInput setInputModalOpen={setInputModalOpen} />}
+      {InputModalOpen && (
+        <TodoInputModal setInputModalOpen={setInputModalOpen} />
+      )}
 
       <S.TodoContainer>
         <S.TodoWarp>
+          <S.EyeIcon src={eyeIcon} alt="eyeIcon" />
           <S.CalendarWarp>
-            <S.EyeIcon src={eyeIcon} alt="eyeIcon" />
-
             <TodoCalendar />
             <S.Icons></S.Icons>
           </S.CalendarWarp>
