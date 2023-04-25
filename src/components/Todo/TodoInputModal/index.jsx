@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./style";
-const TodoInput = ({ setInputModalOpen }) => {
+const TodoInputModal = ({ setInputModalOpen }) => {
   const handleCloseModal = () => {
     setInputModalOpen(false);
   };
@@ -10,8 +10,16 @@ const TodoInput = ({ setInputModalOpen }) => {
   };
 
   return (
-    <S.Container>
-      <S.AddWrap>
+    <S.Container
+      onClick={() => {
+        handleCloseModal();
+      }}
+    >
+      <S.AddWrap
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <S.CloseBox>
           <S.CloseButton onClick={handleCloseModal} />
         </S.CloseBox>
@@ -22,13 +30,13 @@ const TodoInput = ({ setInputModalOpen }) => {
         <S.ContentBox>
           <S.Title>내용</S.Title>
           <S.Category>일상 취미 공부 기타</S.Category>
-          <S.Input type="text" placeholder="할 일을 입력해주세요." />
-          <S.Msg>내용을 입력해주세요!</S.Msg>
+          <S.Content type="text" placeholder="할 일을 입력해주세요." />
+          <S.WarningMsg>내용을 입력해주세요!</S.WarningMsg>
         </S.ContentBox>
-        <S.Button onClick={handleAddTodoContent}>등록</S.Button>
+        <S.AddButton onClick={handleAddTodoContent}>등록</S.AddButton>
       </S.AddWrap>
     </S.Container>
   );
 };
 
-export default TodoInput;
+export default TodoInputModal;
