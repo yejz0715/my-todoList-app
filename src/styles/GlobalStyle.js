@@ -14,9 +14,8 @@ html {
   --color-text: #333333;
   --color-text-serve: #666666;
   --color-text-hint: #999999;
-  --color-text-warning:#C65050
+  --color-text-warning:#C65050;
 
-  font-size: 62.5%; 
 }
 @font-face {
     font-family: 'SCoreDream-Light';
