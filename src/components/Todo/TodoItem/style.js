@@ -43,9 +43,10 @@ export const Detail = styled.input`
   font-size: 1rem;
   line-height: 1.1875rem;
   color: ${(props) =>
-    props.detailReadOnly === true ? "var(--color-text-hint)" : "#333"};
+    props.isTodoCheck === true ? "var(--color-text-hint)" : "#333"};
   text-decoration: ${(props) =>
-    props.detailReadOnly === true ? "line-through" : "none"};
+    props.isTodoCheck === true ? "line-through" : "none"};
+  border-bottom: 1px solid #d4dfec;
 `;
 
 export const ModifyWarp = styled.div`

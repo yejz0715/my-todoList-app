@@ -9,7 +9,6 @@ const TodoItem = () => {
 
   const handleTodoCheck = () => {
     setTodoCheck((prev) => !prev);
-    setDetailReadOnly((prev) => !prev);
   };
 
   const showModifyOption = () => {
@@ -17,7 +16,7 @@ const TodoItem = () => {
   };
 
   const handleUpdate = () => {
-    setTodoCheck((prev) => !prev);
+    setDetailReadOnly((prev) => !prev);
   };
   return (
     <S.Container onClick={() => setShowModal(false)} isTodoCheck={isTodoCheck}>
