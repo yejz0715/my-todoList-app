@@ -54,6 +54,12 @@ export const Title = styled.label`
   font-size: 1rem;
   line-height: 1.1875rem;
 `;
+export const CategoryBox = styled.div`
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+`;
 
 export const Date = styled.label`
   padding: 1.125rem 0 1.0625rem 1rem;
@@ -62,6 +68,7 @@ export const Date = styled.label`
   line-height: 1.1875rem;
   background-color: rgba(217, 217, 217, 0.15);
   border-radius: 3rem;
+  cursor: pointer;
 `;
 
 export const ContentBox = styled.div`
